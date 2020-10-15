@@ -1,9 +1,13 @@
 package com.tanyiqu.pojo;
 
+import org.junit.Test;
+
 public class User {
     private int id;
     private String name;
     private String pwd;
+
+
 
     @Override
     public String toString() {

@@ -6,6 +6,5 @@ import java.util.List;
 
 public interface IUserMapper {
 
-
-    public List<User> getUsers();
+    List<User> getUsers();
 }
