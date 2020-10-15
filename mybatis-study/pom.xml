@@ -6,7 +6,7 @@
 
     <!-- 父工程 -->
     <groupId>com.tanyiqu</groupId>
-    <artifactId>com.tanyiqu</artifactId>
+    <artifactId>mybatis-study</artifactId>
     <version>1.0.0</version>
 
     <!-- 导入坐标 -->
@@ -24,7 +24,7 @@
             <artifactId>mybatis</artifactId>
             <version>3.5.2</version>
         </dependency>
-        
+
         <!-- junit -->
         <dependency>
             <groupId>junit</groupId>
