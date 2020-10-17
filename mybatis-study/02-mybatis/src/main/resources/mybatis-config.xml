@@ -6,6 +6,12 @@
 <!-- 核心配置文件 -->
 <configuration>
     <properties resource="db.properties"/>
+    
+    <!-- 别名 -->
+    <typeAliases>
+        <typeAlias type="com.tanyiqu.pojo.User" alias="User"/>
+        <package name="com.tanyiqu.pojo"/>
+    </typeAliases>
 
     <!--    配置环境-->
     <environments default="mysql">
