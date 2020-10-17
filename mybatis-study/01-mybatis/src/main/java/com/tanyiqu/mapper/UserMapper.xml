@@ -20,10 +20,19 @@
         insert into user (id,name,pwd) values (#{id},#{name},#{pwd});
     </insert>
 
+    <insert id="addUser2" parameterType="map">
+        insert into user (id,name,pwd) values (#{id},#{name},#{pwd});
+    </insert>
+
     <!-- 修改用户-->
     <update id="updateUser" parameterType="com.tanyiqu.pojo.User">
-        update user set name=#{name}, pwd=#{pwd} where id = #{id};
+        update user set name=#{name}, pwd=#{pwd} where id=#{id};
     </update>
+
+    <update id="updateUserPwd" parameterType="map">
+        update user set pwd=#{pwd} where id=#{id};
+    </update>
+
 
     <!-- 删除用户-->
     <delete id="deleteUser" parameterType="int">
