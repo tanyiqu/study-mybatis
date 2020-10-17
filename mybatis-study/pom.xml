@@ -11,6 +11,7 @@
     <version>1.0.0</version>
     <modules>
         <module>01-mybatis</module>
+        <module>02-mybatis</module>
     </modules>
 
     <!-- 导入坐标 -->

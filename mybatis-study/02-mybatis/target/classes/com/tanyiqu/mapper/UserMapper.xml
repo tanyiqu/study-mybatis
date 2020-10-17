@@ -5,22 +5,22 @@
 
 <mapper namespace="com.tanyiqu.mapper.UserMapper">
 
-    <!-- æŸ¥è¯¢æ‰€æœ‰ç”¨æˆ· -->
+    <!-- ²éÑ¯ËùÓÐÓÃ»§ -->
     <select id="getUsers" resultType="com.tanyiqu.pojo.User">
         select * from user;
     </select>
 
-    <!-- æ ¹æ®idæŸ¥ç”¨æˆ· -->
+    <!-- ¸ù¾Ýid²éÓÃ»§ -->
     <select id="getUserById" parameterType="int" resultType="com.tanyiqu.pojo.User">
         select * from user where id = #{id};
     </select>
 
-    <!-- æ ¹æ®åå­—æ¨¡ç³ŠæŸ¥è¯¢ç”¨æˆ· -->
+    <!-- ¸ù¾ÝÃû×ÖÄ£ºý²éÑ¯ÓÃ»§ -->
     <select id="getUserLike" parameterType="String" resultType="com.tanyiqu.pojo.User">
         select * from user where name like "%"#{name}"%";
     </select>
 
-    <!-- æ·»åŠ ä¸€ä¸ªç”¨æˆ· -->
+    <!-- Ìí¼ÓÒ»¸öÓÃ»§ -->
     <insert id="addUser" parameterType="com.tanyiqu.pojo.User">
         insert into user (id,name,pwd) values (#{id},#{name},#{pwd});
     </insert>
@@ -29,7 +29,7 @@
         insert into user (id,name,pwd) values (#{id},#{name},#{pwd});
     </insert>
 
-    <!-- ä¿®æ”¹ç”¨æˆ·-->
+    <!-- ÐÞ¸ÄÓÃ»§-->
     <update id="updateUser" parameterType="com.tanyiqu.pojo.User">
         update user set name=#{name}, pwd=#{pwd} where id=#{id};
     </update>
@@ -39,7 +39,7 @@
     </update>
 
 
-    <!-- åˆ é™¤ç”¨æˆ·-->
+    <!-- É¾³ýÓÃ»§-->
     <delete id="deleteUser" parameterType="int">
         delete from user where id = #{id};
     </delete>
