@@ -12,6 +12,9 @@ public interface IUserMapper {
     // 根据id查用户
     User getUserById(int id);
 
+    // 根据名字模糊查询用户
+    List<User> getUserLike(String name);
+
     // 添加一个用户
     int addUser(User user);
 

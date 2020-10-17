@@ -35,6 +35,19 @@ public class UserMapperTest {
     }
 
     @Test
+    public void getUserLike() {
+        SqlSession sqlSession = MybatisUtil.getSqlSession();
+        IUserMapper userMapper = sqlSession.getMapper(IUserMapper.class);
+
+        List<User> users = userMapper.getUserLike("张");
+        for (User user : users) {
+            System.out.println(user);
+        }
+
+        sqlSession.close();
+    }
+
+    @Test
     public void addUser() {
         SqlSession sqlSession = MybatisUtil.getSqlSession();
         IUserMapper userMapper = sqlSession.getMapper(IUserMapper.class);
