@@ -12,6 +12,7 @@
     <modules>
         <module>01-mybatis</module>
         <module>02-mybatis</module>
+        <module>03-mybatis</module>
     </modules>
 
     <!-- 导入坐标 -->
