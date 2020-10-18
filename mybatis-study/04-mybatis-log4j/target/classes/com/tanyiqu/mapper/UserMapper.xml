@@ -5,7 +5,7 @@
 
 <mapper namespace="com.tanyiqu.mapper.UserMapper">
 
-    <!-- æ ¹æ®idæŸ¥ç”¨æˆ· -->
+    <!-- ¸ù¾Ýid²éÓÃ»§ -->
     <resultMap id="UserMap" type="User">
         <result property="password" column="pwd"/>
     </resultMap>
