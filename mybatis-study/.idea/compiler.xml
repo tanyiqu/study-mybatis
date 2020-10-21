@@ -6,11 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="02-mybatis" />
-        <module name="03-mybatis" />
-        <module name="04-mybatis-log4j" />
-        <module name="05-mybatis" />
         <module name="01-mybatis" />
+        <module name="02-mybatis" />
+        <module name="04-mybatis-log4j" />
+        <module name="03-mybatis" />
+        <module name="05-mybatis" />
+        <module name="06-mybatis" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

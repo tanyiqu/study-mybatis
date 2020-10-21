@@ -8,12 +8,10 @@
     <properties resource="db.properties"/>
 
     <settings>
-        <setting name="logImpl" value="log4j.properties"/>
+        <setting name="logImpl" value="LOG4J"/>
     </settings>
 
-    <!-- 别名 -->
     <typeAliases>
-        <typeAlias type="com.tanyiqu.pojo.User" alias="User"/>
         <package name="com.tanyiqu.pojo"/>
     </typeAliases>
 
@@ -33,7 +31,7 @@
 
     <!-- 映射配置文件 -->
     <mappers>
-        <mapper resource="com/tanyiqu/mapper/UserMapper.xml"/>
+        <package name="com.tanyiqu.mapper"/>
     </mappers>
 
 </configuration>
