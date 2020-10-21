@@ -14,6 +14,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="01" target="1.5" />
+      <module name="05-mybatis" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
