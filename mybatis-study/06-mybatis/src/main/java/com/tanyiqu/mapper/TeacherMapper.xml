@@ -6,8 +6,7 @@
 <mapper namespace="com.tanyiqu.mapper.TeacherMapper">
 
 
-    <select id="getTeachers" resultType="teacher">
-        select * from teacher;
+    <select id="getTeacherById" resultType="teacher">
+        select * from teacher where id=#{id};
     </select>
-
 </mapper>

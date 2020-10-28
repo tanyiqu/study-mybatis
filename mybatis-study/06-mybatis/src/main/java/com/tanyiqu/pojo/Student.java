@@ -1,9 +1,13 @@
 package com.tanyiqu.pojo;
 
 public class Student {
-    int id;
-    String name;
-    Teacher teacher;
+    private int id;
+    private String name;
+
+    private Teacher teacher;
+
+    public Student() {
+    }
 
     public Student(int id, String name, Teacher teacher) {
         this.id = id;

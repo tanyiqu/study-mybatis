@@ -1,9 +1,11 @@
 package com.tanyiqu.pojo;
 
 public class Teacher {
+    private int id;
+    private String name;
 
-    int id;
-    String name;
+    public Teacher() {
+    }
 
     public Teacher(int id, String name) {
         this.id = id;

@@ -5,6 +5,4 @@
 
 <mapper namespace="com.tanyiqu.mapper.StudentMapper">
 
-
-
 </mapper>
