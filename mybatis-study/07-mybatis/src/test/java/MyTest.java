@@ -13,12 +13,29 @@ public class MyTest {
     public void getTeachers() {
         SqlSession session = MybatisUtil.getSqlSession();
         TeacherMapper mapper = session.getMapper(TeacherMapper.class);
-
         List<Teacher> teachers = mapper.getTeachers();
         for (Teacher teacher : teachers) {
             System.out.println(teacher);
         }
-
         session.close();
     }
+
+    @Test
+    public void getTeacherById() {
+        SqlSession session = MybatisUtil.getSqlSession();
+        TeacherMapper mapper = session.getMapper(TeacherMapper.class);
+        Teacher teacher = mapper.getTeacherById(2);
+        System.out.println(teacher);
+        session.close();
+    }
+
+    @Test
+    public void getTeacherById2() {
+        SqlSession session = MybatisUtil.getSqlSession();
+        TeacherMapper mapper = session.getMapper(TeacherMapper.class);
+        Teacher teacher = mapper.getTeacherById2(1);
+        System.out.println(teacher);
+        session.close();
+    }
+
 }
