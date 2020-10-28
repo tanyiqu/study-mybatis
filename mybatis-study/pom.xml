@@ -16,6 +16,7 @@
         <module>04-mybatis-log4j</module>
         <module>05-mybatis</module>
         <module>06-mybatis</module>
+        <module>07-mybatis</module>
     </modules>
 
     <!-- 导入坐标 -->
