@@ -5,4 +5,19 @@
 
 <mapper namespace="com.tanyiqu.mapper.StudentMapper">
 
+    <!--
+    思路1
+        1.查询所有学生
+        2.根据查询出的tid查询教师
+    -->
+    <select id="getStudents" resultMap="TeacherStudent">
+        select * from student;
+    </select>
+    <resultMap id="TeacherStudent" type="student">
+        <association property="teacher" column="tid" javaType="teacher" select="getTeacher"/>
+    </resultMap>
+    <select id="getTeacher" resultType="teacher">
+        select * from teacher where id=#{id};
+    </select>
+
 </mapper>

@@ -1,10 +1,14 @@
 package test;
 
+import com.tanyiqu.mapper.StudentMapper;
 import com.tanyiqu.mapper.TeacherMapper;
+import com.tanyiqu.pojo.Student;
 import com.tanyiqu.pojo.Teacher;
 import com.tanyiqu.util.MybatisUtil;
 import org.apache.ibatis.session.SqlSession;
 import org.junit.Test;
+
+import java.util.List;
 
 public class MyTest {
 
@@ -16,4 +20,18 @@ public class MyTest {
         System.out.println(teacher);
         session.close();
     }
+
+    @Test
+    public void getStudents() {
+        SqlSession session = MybatisUtil.getSqlSession();
+
+        StudentMapper mapper = session.getMapper(StudentMapper.class);
+        List<Student> students = mapper.getStudents();
+        for (Student student : students) {
+            System.out.println(student);
+        }
+
+        session.close();
+    }
+
 }
