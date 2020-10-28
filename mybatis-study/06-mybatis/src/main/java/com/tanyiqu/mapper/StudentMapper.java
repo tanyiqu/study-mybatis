@@ -8,4 +8,6 @@ public interface StudentMapper {
 
     public List<Student> getStudents();
 
+    List<Student> getStudents2();
+
 }

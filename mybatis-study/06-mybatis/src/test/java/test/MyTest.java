@@ -24,14 +24,22 @@ public class MyTest {
     @Test
     public void getStudents() {
         SqlSession session = MybatisUtil.getSqlSession();
-
         StudentMapper mapper = session.getMapper(StudentMapper.class);
         List<Student> students = mapper.getStudents();
         for (Student student : students) {
             System.out.println(student);
         }
-
         session.close();
     }
 
+    @Test
+    public void getStudents2() {
+        SqlSession session = MybatisUtil.getSqlSession();
+        StudentMapper mapper = session.getMapper(StudentMapper.class);
+        List<Student> students = mapper.getStudents2();
+        for (Student student : students) {
+            System.out.println(student);
+        }
+        session.close();
+    }
 }
