@@ -1,9 +1,9 @@
 package com.tanyiqu.pojo;
 
 public class Student {
-    private int id;
-    private String name;
-    private int tid;
+        private int id;
+        private String name;
+        private int tid;
 
     public Student() {
     }
