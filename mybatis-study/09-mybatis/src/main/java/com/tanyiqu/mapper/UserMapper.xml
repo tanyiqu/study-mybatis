@@ -5,6 +5,13 @@
 
 <mapper namespace="com.tanyiqu.mapper.UserMapper">
 
+    <!--    <cache/>-->
+
+    <cache eviction="FIFO"
+           flushInterval="60000"
+           size="512"
+           readOnly="true"/>
+
     <select id="queryUserById" resultType="user">
         select * from user where id = #{id}
     </select>

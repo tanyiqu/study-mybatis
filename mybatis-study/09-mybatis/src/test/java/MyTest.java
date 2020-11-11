@@ -6,7 +6,6 @@ import org.junit.Test;
 
 public class MyTest {
 
-
     @Test
     public void testCache1() {
         SqlSession session = MybatisUtil.getSqlSession();

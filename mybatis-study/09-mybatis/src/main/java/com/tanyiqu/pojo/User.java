@@ -1,6 +1,8 @@
 package com.tanyiqu.pojo;
 
-public class User {
+import java.io.Serializable;
+
+public class User implements Serializable {
     int id;
     String name;
     String pwd;
