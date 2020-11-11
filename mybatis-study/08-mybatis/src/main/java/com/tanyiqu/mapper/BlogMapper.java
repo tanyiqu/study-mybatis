@@ -13,6 +13,6 @@ public interface BlogMapper {
 
     List<Blog> queryBlogsByChoose(Map<String, Object> map);
 
-    int updateBlog(Map<String, Object> map); 
+    int updateBlog(Map<String, Object> map);
 
 }

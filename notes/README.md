@@ -39,3 +39,7 @@
 - **08-mybatis**
 
   动态SQL
+  
+- **09-mybatis**
+
+  缓存
