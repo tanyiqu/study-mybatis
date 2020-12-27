@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb8771a0-f1d9-4256-af83-6e82c1c3c47d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/mybatis-06-pagingByLimit/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-07-annotation/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-01-起步/src/main/java/com/tanyiqu/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-01-起步/src/main/java/com/tanyiqu/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-02-properties配置数据源/src/main/java/com/tanyiqu/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-02-properties配置数据源/src/main/java/com/tanyiqu/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-03-crud/src/main/java/com/tanyiqu/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-03-crud/src/main/java/com/tanyiqu/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-04-ResultMap/src/main/java/com/tanyiqu/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-04-ResultMap/src/main/java/com/tanyiqu/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-05-log/src/main/java/com/tanyiqu/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-05-log/src/main/java/com/tanyiqu/mapper/UserMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,29 +63,39 @@
       <recent name="E:\Code\Java MyBatis\mybatis-study\mybatis-study\mybatis-02-properties配置数据源\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MyTest.getUsersByLimit">
-    <configuration name="MyTest.findUserById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mybatis-04-ResultMap" />
+  <component name="RunManager" selected="JUnit.MyTest.updateUserById">
+    <configuration name="MyTest.addUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis-07-annotation" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MyTest" />
-      <option name="METHOD_NAME" value="findUserById" />
+      <option name="METHOD_NAME" value="addUser" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyTest.findUserByIdWithResultMap" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mybatis-04-ResultMap" />
+    <configuration name="MyTest.deleteUserById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis-07-annotation" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MyTest" />
-      <option name="METHOD_NAME" value="findUserByIdWithResultMap" />
+      <option name="METHOD_NAME" value="deleteUserById" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyTest.getUsers (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mybatis-05-log" />
+    <configuration name="MyTest.getUserById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis-07-annotation" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MyTest" />
+      <option name="METHOD_NAME" value="getUserById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyTest.getUsers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis-07-annotation" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MyTest" />
       <option name="METHOD_NAME" value="getUsers" />
@@ -99,40 +104,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyTest.getUsers (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mybatis-06-pagingByLimit" />
+    <configuration name="MyTest.updateUserById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis-07-annotation" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MyTest" />
-      <option name="METHOD_NAME" value="getUsers" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MyTest.getUsersByLimit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mybatis-06-pagingByLimit" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MyTest" />
-      <option name="METHOD_NAME" value="getUsersByLimit" />
+      <option name="METHOD_NAME" value="updateUserById" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.MyTest.findUserById" />
-      <item itemvalue="JUnit.MyTest.findUserByIdWithResultMap" />
-      <item itemvalue="JUnit.MyTest.getUsers (1)" />
-      <item itemvalue="JUnit.MyTest.getUsers (2)" />
-      <item itemvalue="JUnit.MyTest.getUsersByLimit" />
+      <item itemvalue="JUnit.MyTest.getUsers" />
+      <item itemvalue="JUnit.MyTest.getUserById" />
+      <item itemvalue="JUnit.MyTest.addUser" />
+      <item itemvalue="JUnit.MyTest.deleteUserById" />
+      <item itemvalue="JUnit.MyTest.updateUserById" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MyTest.getUsersByLimit" />
-        <item itemvalue="JUnit.MyTest.getUsers (2)" />
-        <item itemvalue="JUnit.MyTest.getUsers (1)" />
-        <item itemvalue="JUnit.MyTest.findUserByIdWithResultMap" />
-        <item itemvalue="JUnit.MyTest.findUserById" />
+        <item itemvalue="JUnit.MyTest.updateUserById" />
+        <item itemvalue="JUnit.MyTest.addUser" />
+        <item itemvalue="JUnit.MyTest.deleteUserById" />
+        <item itemvalue="JUnit.MyTest.getUserById" />
+        <item itemvalue="JUnit.MyTest.getUsers" />
       </list>
     </recent_temporary>
   </component>
@@ -159,6 +154,7 @@
       <option name="presentableId" value="Default" />
       <updated>1609047066396</updated>
       <workItem from="1609047069328" duration="9210000" />
+      <workItem from="1609058613878" duration="280000" />
     </task>
     <task id="LOCAL-00001" summary="重新创建项目进行学习">
       <created>1609047578805</created>
@@ -234,29 +230,29 @@
       <screen x="66" y="0" width="1854" height="1080" />
     </state>
     <state x="773" y="295" key="FileChooserDialogImpl/66.0.1854.1080/-1853.1.1853.1080@66.0.1854.1080" timestamp="1609048039696" />
-    <state width="1811" height="182" key="GridCell.Tab.0.bottom" timestamp="1609056864714">
+    <state width="1811" height="221" key="GridCell.Tab.0.bottom" timestamp="1609058881605">
       <screen x="66" y="0" width="1854" height="1080" />
     </state>
-    <state width="1811" height="182" key="GridCell.Tab.0.bottom/66.0.1854.1080/-1853.1.1853.1080@66.0.1854.1080" timestamp="1609056864714" />
-    <state width="1811" height="182" key="GridCell.Tab.0.center" timestamp="1609056864714">
+    <state width="1811" height="221" key="GridCell.Tab.0.bottom/66.0.1854.1080/-1853.1.1853.1080@66.0.1854.1080" timestamp="1609058881605" />
+    <state width="1811" height="221" key="GridCell.Tab.0.center" timestamp="1609058881605">
       <screen x="66" y="0" width="1854" height="1080" />
     </state>
-    <state width="1811" height="182" key="GridCell.Tab.0.center/66.0.1854.1080/-1853.1.1853.1080@66.0.1854.1080" timestamp="1609056864714" />
-    <state width="1811" height="182" key="GridCell.Tab.0.left" timestamp="1609056864714">
+    <state width="1811" height="221" key="GridCell.Tab.0.center/66.0.1854.1080/-1853.1.1853.1080@66.0.1854.1080" timestamp="1609058881605" />
+    <state width="1811" height="221" key="GridCell.Tab.0.left" timestamp="1609058881605">
       <screen x="66" y="0" width="1854" height="1080" />
     </state>
-    <state width="1811" height="182" key="GridCell.Tab.0.left/66.0.1854.1080/-1853.1.1853.1080@66.0.1854.1080" timestamp="1609056864714" />
-    <state width="1811" height="182" key="GridCell.Tab.0.right" timestamp="1609056864714">
+    <state width="1811" height="221" key="GridCell.Tab.0.left/66.0.1854.1080/-1853.1.1853.1080@66.0.1854.1080" timestamp="1609058881605" />
+    <state width="1811" height="221" key="GridCell.Tab.0.right" timestamp="1609058881605">
       <screen x="66" y="0" width="1854" height="1080" />
     </state>
-    <state width="1811" height="182" key="GridCell.Tab.0.right/66.0.1854.1080/-1853.1.1853.1080@66.0.1854.1080" timestamp="1609056864714" />
+    <state width="1811" height="221" key="GridCell.Tab.0.right/66.0.1854.1080/-1853.1.1853.1080@66.0.1854.1080" timestamp="1609058881605" />
     <state x="585" y="273" key="Vcs.Push.Dialog.v2" timestamp="1609049851184">
       <screen x="66" y="0" width="1854" height="1080" />
     </state>
     <state x="585" y="273" key="Vcs.Push.Dialog.v2/66.0.1854.1080/-1853.1.1853.1080@66.0.1854.1080" timestamp="1609049851184" />
-    <state x="367" y="234" key="new project wizard" timestamp="1609056110919">
+    <state x="367" y="234" key="new project wizard" timestamp="1609058640882">
       <screen x="66" y="0" width="1854" height="1080" />
     </state>
-    <state x="367" y="234" key="new project wizard/66.0.1854.1080/-1853.1.1853.1080@66.0.1854.1080" timestamp="1609056110919" />
+    <state x="367" y="234" key="new project wizard/66.0.1854.1080/-1853.1.1853.1080@66.0.1854.1080" timestamp="1609058640882" />
   </component>
 </project>
