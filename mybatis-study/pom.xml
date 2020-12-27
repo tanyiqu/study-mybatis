@@ -10,6 +10,8 @@
     <version>1.0</version>
     <modules>
         <module>mybatis-01-起步</module>
+        <module>mybatis-02-properties配置数据源</module>
+        <module>mybatis-03-crud</module>
     </modules>
 
     <!-- 导入坐标 -->

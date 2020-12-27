@@ -1,0 +1,27 @@
+<?xml version="1.0"  encoding="UTF8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--suppress SqlNoDataSourceInspection, SqlDialectInspection -->
+<mapper namespace="com.tanyiqu.mapper.UserMapper">
+
+    <!-- 查询所有用户 -->
+    <select id="getUsers" resultType="User">
+        select * from user;
+    </select>
+
+    <insert id="addUser" parameterType="user">
+        insert into user(`id`,`name`,`pwd`) values(#{id},#{name},#{pwd});
+    </insert>
+
+    <delete id="deleteUserById" parameterType="int">
+        delete from user where id=#{id};
+    </delete>
+
+
+    <update id="updateUserById" parameterType="int">
+        update user set pwd='666555' where id=#{id};
+    </update>
+
+</mapper>
