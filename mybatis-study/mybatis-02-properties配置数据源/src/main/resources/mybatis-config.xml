@@ -9,11 +9,10 @@
 
     <!-- 别名 -->
     <typeAliases>
-        <typeAlias type="com.tanyiqu.pojo.User" alias="User"/>
         <package name="com.tanyiqu.pojo"/>
     </typeAliases>
 
-    <!--    配置环境-->
+    <!-- 配置环境-->
     <environments default="mysql">
         <environment id="mysql">
             <transactionManager type="JDBC">
