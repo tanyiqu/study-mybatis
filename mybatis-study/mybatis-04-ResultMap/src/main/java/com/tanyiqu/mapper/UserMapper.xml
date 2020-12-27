@@ -7,7 +7,7 @@
 <mapper namespace="com.tanyiqu.mapper.UserMapper">
 
     <!-- 查询所有用户 -->
-    <select id="getUsers" resultType="User">
+    <select id="getUsers" resultType="user">
         select * from user;
     </select>
 

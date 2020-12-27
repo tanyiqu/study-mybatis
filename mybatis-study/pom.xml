@@ -14,6 +14,7 @@
         <module>mybatis-03-crud</module>
         <module>mybatis-04-ResultMap</module>
         <module>mybatis-05-log</module>
+        <module>mybatis-06-pagingByLimit</module>
     </modules>
 
     <!-- 导入坐标 -->

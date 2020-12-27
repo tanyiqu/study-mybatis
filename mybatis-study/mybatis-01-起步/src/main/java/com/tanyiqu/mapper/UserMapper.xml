@@ -3,6 +3,7 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
+<!--suppress SqlNoDataSourceInspection, SqlDialectInspection -->
 <mapper namespace="com.com.tanyiqu.mapper.UserMapper">
     <select id="getUsers" resultType="com.com.tanyiqu.pojo.User">
         select * from user

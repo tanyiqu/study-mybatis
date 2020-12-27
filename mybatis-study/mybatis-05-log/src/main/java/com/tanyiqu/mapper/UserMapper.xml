@@ -3,12 +3,11 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<!--suppress SqlNoDataSourceInspection -->
+<!--suppress SqlNoDataSourceInspection, SqlDialectInspection -->
 <mapper namespace="com.tanyiqu.mapper.UserMapper">
 
     <!-- 查询所有用户 -->
-    <!--suppress SqlDialectInspection -->
-    <select id="getUsers" resultType="User">
+    <select id="getUsers" resultType="user">
         select * from user;
     </select>
 

@@ -11,17 +11,9 @@
         select * from user;
     </select>
 
-    <insert id="addUser" parameterType="user">
-        insert into user(`id`,`name`,`pwd`) values(#{id},#{name},#{pwd});
-    </insert>
+    <select id="getUsersByLimit" parameterType="map" resultType="user">
+        select * from user limit #{startIndex},#{pageSize};
+    </select>
 
-    <delete id="deleteUserById" parameterType="int">
-        delete from user where id=#{id};
-    </delete>
-
-
-    <update id="updateUserById" parameterType="int">
-        update user set pwd='666555' where id=#{id};
-    </update>
 
 </mapper>
