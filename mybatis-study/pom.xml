@@ -12,6 +12,7 @@
         <module>mybatis-01-起步</module>
         <module>mybatis-02-properties配置数据源</module>
         <module>mybatis-03-crud</module>
+        <module>mybatis-04-ResultMap</module>
     </modules>
 
     <!-- 导入坐标 -->

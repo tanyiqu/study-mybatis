@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="mybatis-01-起步" />
+        <module name="mybatis-04-ResultMap" />
         <module name="mybatis-03-crud" />
         <module name="mybatis-02-properties配置数据源" />
       </profile>
