@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb8771a0-f1d9-4256-af83-6e82c1c3c47d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/mybatis-05-log/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-05-log/src/main/resources/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-01-起步/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-01-起步/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-02-properties配置数据源/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-02-properties配置数据源/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-03-crud/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-03-crud/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-04-ResultMap/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-04-ResultMap/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notes/起步.md" beforeDir="false" afterPath="$PROJECT_DIR$/../notes/起步.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,18 +65,9 @@
       <recent name="E:\Code\Java MyBatis\mybatis-study\mybatis-study\mybatis-02-properties配置数据源\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MyTest.findUserByIdWithResultMap">
+  <component name="RunManager" selected="JUnit.MyTest.getUsers (1)">
     <configuration name="MyTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mybatis-04-ResultMap" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MyTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mybatis-03-crud" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MyTest" />
       <option name="TEST_OBJECT" value="class" />
@@ -103,6 +95,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MyTest.getUsers (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis-05-log" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MyTest" />
+      <option name="METHOD_NAME" value="getUsers" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MyTest.getUsers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mybatis-04-ResultMap" />
       <option name="PACKAGE_NAME" value="" />
@@ -114,19 +116,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.MyTest" />
       <item itemvalue="JUnit.MyTest.getUsers" />
       <item itemvalue="JUnit.MyTest (1)" />
       <item itemvalue="JUnit.MyTest.findUserById" />
       <item itemvalue="JUnit.MyTest.findUserByIdWithResultMap" />
+      <item itemvalue="JUnit.MyTest.getUsers (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MyTest.getUsers (1)" />
         <item itemvalue="JUnit.MyTest.findUserByIdWithResultMap" />
         <item itemvalue="JUnit.MyTest.findUserById" />
         <item itemvalue="JUnit.MyTest.getUsers" />
         <item itemvalue="JUnit.MyTest (1)" />
-        <item itemvalue="JUnit.MyTest" />
       </list>
     </recent_temporary>
   </component>
@@ -152,7 +154,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1609047066396</updated>
-      <workItem from="1609047069328" duration="5868000" />
+      <workItem from="1609047069328" duration="7665000" />
     </task>
     <task id="LOCAL-00001" summary="重新创建项目进行学习">
       <created>1609047578805</created>
@@ -175,7 +177,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609052831617</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="修改配置文件的小问题">
+      <created>1609053109392</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1609053109392</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,7 +194,8 @@
     <MESSAGE value="重新创建项目进行学习" />
     <MESSAGE value="xml配置 CRUD操作" />
     <MESSAGE value="ResultMap结果集映射" />
-    <option name="LAST_COMMIT_MESSAGE" value="ResultMap结果集映射" />
+    <MESSAGE value="修改配置文件的小问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改配置文件的小问题" />
   </component>
   <component name="WindowStateProjectService">
     <state x="585" y="198" key="#Project_Structure" timestamp="1609049042152">
@@ -204,37 +214,37 @@
       <screen x="66" y="0" width="1854" height="1080" />
     </state>
     <state x="523" y="465" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/66.0.1854.1080/-1853.1.1853.1080@66.0.1854.1080" timestamp="1609048315083" />
-    <state x="504" y="130" key="CommitChangelistDialog2" timestamp="1609052831061">
+    <state x="504" y="130" key="CommitChangelistDialog2" timestamp="1609055297289">
       <screen x="66" y="0" width="1854" height="1080" />
     </state>
-    <state x="504" y="130" key="CommitChangelistDialog2/66.0.1854.1080/-1853.1.1853.1080@66.0.1854.1080" timestamp="1609052831061" />
+    <state x="504" y="130" key="CommitChangelistDialog2/66.0.1854.1080/-1853.1.1853.1080@66.0.1854.1080" timestamp="1609055297289" />
     <state x="773" y="295" key="FileChooserDialogImpl" timestamp="1609048039696">
       <screen x="66" y="0" width="1854" height="1080" />
     </state>
     <state x="773" y="295" key="FileChooserDialogImpl/66.0.1854.1080/-1853.1.1853.1080@66.0.1854.1080" timestamp="1609048039696" />
-    <state width="1811" height="245" key="GridCell.Tab.0.bottom" timestamp="1609052925297">
+    <state width="1811" height="278" key="GridCell.Tab.0.bottom" timestamp="1609055297303">
       <screen x="66" y="0" width="1854" height="1080" />
     </state>
-    <state width="1811" height="245" key="GridCell.Tab.0.bottom/66.0.1854.1080/-1853.1.1853.1080@66.0.1854.1080" timestamp="1609052925297" />
-    <state width="1811" height="245" key="GridCell.Tab.0.center" timestamp="1609052925297">
+    <state width="1811" height="278" key="GridCell.Tab.0.bottom/66.0.1854.1080/-1853.1.1853.1080@66.0.1854.1080" timestamp="1609055297303" />
+    <state width="1811" height="278" key="GridCell.Tab.0.center" timestamp="1609055297303">
       <screen x="66" y="0" width="1854" height="1080" />
     </state>
-    <state width="1811" height="245" key="GridCell.Tab.0.center/66.0.1854.1080/-1853.1.1853.1080@66.0.1854.1080" timestamp="1609052925297" />
-    <state width="1811" height="245" key="GridCell.Tab.0.left" timestamp="1609052925297">
+    <state width="1811" height="278" key="GridCell.Tab.0.center/66.0.1854.1080/-1853.1.1853.1080@66.0.1854.1080" timestamp="1609055297303" />
+    <state width="1811" height="278" key="GridCell.Tab.0.left" timestamp="1609055297302">
       <screen x="66" y="0" width="1854" height="1080" />
     </state>
-    <state width="1811" height="245" key="GridCell.Tab.0.left/66.0.1854.1080/-1853.1.1853.1080@66.0.1854.1080" timestamp="1609052925297" />
-    <state width="1811" height="245" key="GridCell.Tab.0.right" timestamp="1609052925297">
+    <state width="1811" height="278" key="GridCell.Tab.0.left/66.0.1854.1080/-1853.1.1853.1080@66.0.1854.1080" timestamp="1609055297302" />
+    <state width="1811" height="278" key="GridCell.Tab.0.right" timestamp="1609055297303">
       <screen x="66" y="0" width="1854" height="1080" />
     </state>
-    <state width="1811" height="245" key="GridCell.Tab.0.right/66.0.1854.1080/-1853.1.1853.1080@66.0.1854.1080" timestamp="1609052925297" />
+    <state width="1811" height="278" key="GridCell.Tab.0.right/66.0.1854.1080/-1853.1.1853.1080@66.0.1854.1080" timestamp="1609055297303" />
     <state x="585" y="273" key="Vcs.Push.Dialog.v2" timestamp="1609049851184">
       <screen x="66" y="0" width="1854" height="1080" />
     </state>
     <state x="585" y="273" key="Vcs.Push.Dialog.v2/66.0.1854.1080/-1853.1.1853.1080@66.0.1854.1080" timestamp="1609049851184" />
-    <state x="367" y="234" key="new project wizard" timestamp="1609051170023">
+    <state x="367" y="234" key="new project wizard" timestamp="1609054911242">
       <screen x="66" y="0" width="1854" height="1080" />
     </state>
-    <state x="367" y="234" key="new project wizard/66.0.1854.1080/-1853.1.1853.1080@66.0.1854.1080" timestamp="1609051170023" />
+    <state x="367" y="234" key="new project wizard/66.0.1854.1080/-1853.1.1853.1080@66.0.1854.1080" timestamp="1609054911242" />
   </component>
 </project>
