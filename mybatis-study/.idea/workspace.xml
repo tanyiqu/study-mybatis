@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="cb8771a0-f1d9-4256-af83-6e82c1c3c47d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/mybatis-01-起步/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-01-起步/src/main/java/com/tanyiqu/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-01-起步/src/main/java/com/tanyiqu/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-01-起步/src/main/java/com/tanyiqu/pojo/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-01-起步/src/main/java/com/tanyiqu/util/MybatisUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-01-起步/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-01-起步/src/test/java/MyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-study.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Tanyiqu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/Tanyiqu.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/mybatis-study.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-mybatis/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-mybatis/src/main/java/com/tanyiqu/mapper/UserMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-mybatis/src/main/java/com/tanyiqu/mapper/UserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-mybatis/src/main/java/com/tanyiqu/pojo/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-mybatis/src/main/java/com/tanyiqu/util/MybatisUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-mybatis/src/main/resources/mybatis-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-mybatis/src/test/java/com/tanyiqu/mapper/UserMapperTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02-mybatis/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02-mybatis/src/main/java/com/tanyiqu/mapper/UserMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02-mybatis/src/main/java/com/tanyiqu/mapper/UserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02-mybatis/src/main/java/com/tanyiqu/pojo/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02-mybatis/src/main/java/com/tanyiqu/util/MybatisUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02-mybatis/src/main/resources/db.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02-mybatis/src/main/resources/mybatis-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02-mybatis/src/test/java/com/tanyiqu/test/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-mybatis/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-mybatis/src/main/java/com/tanyiqu/mapper/UserMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-mybatis/src/main/java/com/tanyiqu/mapper/UserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-mybatis/src/main/java/com/tanyiqu/pojo/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-mybatis/src/main/java/com/tanyiqu/util/MybatisUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-mybatis/src/main/resources/db.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-mybatis/src/main/resources/mybatis-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-mybatis/src/test/java/com/tanyiqu/test/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-mybatis-log4j/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-mybatis-log4j/src/main/java/com/tanyiqu/mapper/UserMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-mybatis-log4j/src/main/java/com/tanyiqu/mapper/UserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-mybatis-log4j/src/main/java/com/tanyiqu/pojo/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-mybatis-log4j/src/main/java/com/tanyiqu/util/MybatisUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-mybatis-log4j/src/main/resources/db.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-mybatis-log4j/src/main/resources/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-mybatis-log4j/src/main/resources/mybatis-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-mybatis-log4j/src/test/java/com/tanyiqu/test/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05-mybatis/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05-mybatis/src/main/java/com/tanyiqu/mapper/UserMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05-mybatis/src/main/java/com/tanyiqu/pojo/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05-mybatis/src/main/java/com/tanyiqu/util/MybatisUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05-mybatis/src/main/resources/db.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05-mybatis/src/main/resources/mybatis-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05-mybatis/src/test/java/com/test/UserMapperTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-mybatis/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-mybatis/src/main/java/com/tanyiqu/mapper/StudentMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-mybatis/src/main/java/com/tanyiqu/mapper/StudentMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-mybatis/src/main/java/com/tanyiqu/mapper/TeacherMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-mybatis/src/main/java/com/tanyiqu/mapper/TeacherMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-mybatis/src/main/java/com/tanyiqu/pojo/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-mybatis/src/main/java/com/tanyiqu/pojo/Teacher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-mybatis/src/main/java/com/tanyiqu/util/MybatisUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-mybatis/src/main/resources/db.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-mybatis/src/main/resources/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-mybatis/src/main/resources/mybatis-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-mybatis/src/test/java/test/MyTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/07-mybatis/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/07-mybatis/src/main/java/com/tanyiqu/mapper/StudentMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/07-mybatis/src/main/java/com/tanyiqu/mapper/StudentMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/07-mybatis/src/main/java/com/tanyiqu/mapper/TeacherMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/07-mybatis/src/main/java/com/tanyiqu/mapper/TeacherMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/07-mybatis/src/main/java/com/tanyiqu/pojo/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/07-mybatis/src/main/java/com/tanyiqu/pojo/Teacher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/07-mybatis/src/main/java/com/tanyiqu/util/MybatisUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/07-mybatis/src/main/resources/db.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/07-mybatis/src/main/resources/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/07-mybatis/src/main/resources/mybatis-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/07-mybatis/src/test/java/MyTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/08-mybatis/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/08-mybatis/src/main/java/com/tanyiqu/mapper/BlogMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/08-mybatis/src/main/java/com/tanyiqu/mapper/BlogMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/08-mybatis/src/main/java/com/tanyiqu/pojo/Blog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/08-mybatis/src/main/java/com/tanyiqu/util/IDUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/08-mybatis/src/main/java/com/tanyiqu/util/MybatisUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/08-mybatis/src/main/resources/db.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/08-mybatis/src/main/resources/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/08-mybatis/src/main/resources/mybatis-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/08-mybatis/src/test/java/MyTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/09-mybatis/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/09-mybatis/src/main/java/com/tanyiqu/mapper/UserMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/09-mybatis/src/main/java/com/tanyiqu/mapper/UserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/09-mybatis/src/main/java/com/tanyiqu/pojo/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/09-mybatis/src/main/java/com/tanyiqu/util/MybatisUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/09-mybatis/src/main/resources/db.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/09-mybatis/src/main/resources/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/09-mybatis/src/main/resources/mybatis-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/09-mybatis/src/test/java/MyTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="E:\maven_repository" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1mE7nlwpZChGYJYOBaVRMKoQ2LF" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RunManager">
+    <configuration name="MyTest.getUsers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis-01-起步" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MyTest" />
+      <option name="METHOD_NAME" value="getUsers" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.MyTest.getUsers" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cb8771a0-f1d9-4256-af83-6e82c1c3c47d" name="Default Changelist" comment="" />
+      <created>1609047066396</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1609047066396</updated>
+      <workItem from="1609047069328" duration="454000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1811" height="263" key="GridCell.Tab.0.bottom" timestamp="1609047528589">
+      <screen x="66" y="0" width="1854" height="1080" />
+    </state>
+    <state width="1811" height="263" key="GridCell.Tab.0.bottom/66.0.1854.1080/-1853.1.1853.1080@66.0.1854.1080" timestamp="1609047528589" />
+    <state width="1811" height="263" key="GridCell.Tab.0.center" timestamp="1609047528589">
+      <screen x="66" y="0" width="1854" height="1080" />
+    </state>
+    <state width="1811" height="263" key="GridCell.Tab.0.center/66.0.1854.1080/-1853.1.1853.1080@66.0.1854.1080" timestamp="1609047528589" />
+    <state width="1811" height="263" key="GridCell.Tab.0.left" timestamp="1609047528589">
+      <screen x="66" y="0" width="1854" height="1080" />
+    </state>
+    <state width="1811" height="263" key="GridCell.Tab.0.left/66.0.1854.1080/-1853.1.1853.1080@66.0.1854.1080" timestamp="1609047528589" />
+    <state width="1811" height="263" key="GridCell.Tab.0.right" timestamp="1609047528589">
+      <screen x="66" y="0" width="1854" height="1080" />
+    </state>
+    <state width="1811" height="263" key="GridCell.Tab.0.right/66.0.1854.1080/-1853.1.1853.1080@66.0.1854.1080" timestamp="1609047528589" />
+    <state x="367" y="234" key="new project wizard" timestamp="1609047210364">
+      <screen x="66" y="0" width="1854" height="1080" />
+    </state>
+    <state x="367" y="234" key="new project wizard/66.0.1854.1080/-1853.1.1853.1080@66.0.1854.1080" timestamp="1609047210364" />
+  </component>
+</project>
