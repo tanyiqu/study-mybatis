@@ -25,12 +25,7 @@
     <!--
     思路2 按结果嵌套处理
     -->
-    <select id="getStudents2" resultMap="TeacherStudent2">
-        select s.id sid, s.name sname,t.id tid, t.name tname
-        from student s, teacher t
-        where s.tid = t.id
-    </select>
-    <resultMap id="TeacherStudent2" type="student">
+    <resultMap id="studentMap" type="student">
         <result property="id" column="sid"/>
         <result property="name" column="sname"/>
         <association property="teacher" javaType="teacher">
@@ -38,5 +33,17 @@
             <result property="name" column="tname"/>
         </association>
     </resultMap>
+    <select id="getStudentById" resultMap="studentMap">
+        select s.id sid, s.name sname, t.id tid, t.name tname
+        from student s, teacher t
+        where s.tid = tid and s.id = #{sid};
+    </select>
+
+
+    <select id="getStudents2" resultMap="studentMap">
+        select s.id sid, s.name sname,t.id tid, t.name tname
+        from student s, teacher t
+        where s.tid = t.id
+    </select>
 
 </mapper>

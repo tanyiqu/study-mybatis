@@ -21,6 +21,18 @@ public class MyTest {
         session.close();
     }
 
+
+    @Test
+    public void getStudentById() {
+        SqlSession session = MybatisUtil.getSqlSession();
+        StudentMapper mapper = session.getMapper(StudentMapper.class);
+
+        Student student = mapper.getStudentById(1);
+        System.out.println(student);
+
+        session.close();
+    }
+
     @Test
     public void getStudents() {
         SqlSession session = MybatisUtil.getSqlSession();
@@ -40,6 +52,6 @@ public class MyTest {
         for (Student student : students) {
             System.out.println(student);
         }
-        session.close();/**/
+        session.close();
     }
 }

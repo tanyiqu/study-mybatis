@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb8771a0-f1d9-4256-af83-6e82c1c3c47d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/mybatis-08-多对一association/mybatis-08-多对一association.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-08-多对一association/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Tanyiqu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/Tanyiqu.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-08-多对一association/src/main/java/com/tanyiqu/mapper/StudentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-08-多对一association/src/main/java/com/tanyiqu/mapper/StudentMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-08-多对一association/src/main/java/com/tanyiqu/mapper/StudentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-08-多对一association/src/main/java/com/tanyiqu/mapper/StudentMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-08-多对一association/src/test/java/test/MyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-08-多对一association/src/test/java/test/MyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notes/联表查询 一对多.md" beforeDir="false" afterPath="$PROJECT_DIR$/../notes/联表查询 一对多.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notes/联表查询 多对一.md" beforeDir="false" afterPath="$PROJECT_DIR$/../notes/联表查询 多对一.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,12 +66,33 @@
       <recent name="E:\Code\Java MyBatis\mybatis-study\mybatis-study\mybatis-02-properties配置数据源\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MyTest.getStudents">
-    <configuration name="MyTest.addUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mybatis-07-annotation" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MyTest" />
-      <option name="METHOD_NAME" value="addUser" />
+  <component name="RunManager" selected="JUnit.MyTest">
+    <configuration name="MyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis-08-多对一association" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.MyTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyTest.getStudentById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis-08-多对一association" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.MyTest" />
+      <option name="METHOD_NAME" value="getStudentById" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -124,30 +146,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyTest.updateUserById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mybatis-07-annotation" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MyTest" />
-      <option name="METHOD_NAME" value="updateUserById" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="JUnit.MyTest.addUser" />
-      <item itemvalue="JUnit.MyTest.updateUserById" />
       <item itemvalue="JUnit.MyTest.getStudents2" />
       <item itemvalue="JUnit.MyTest.getStudents" />
       <item itemvalue="JUnit.MyTest.getTeacherById" />
+      <item itemvalue="JUnit.MyTest.getStudentById" />
+      <item itemvalue="JUnit.MyTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MyTest" />
+        <item itemvalue="JUnit.MyTest.getStudentById" />
         <item itemvalue="JUnit.MyTest.getStudents" />
-        <item itemvalue="JUnit.MyTest.getStudents2" />
         <item itemvalue="JUnit.MyTest.getTeacherById" />
-        <item itemvalue="JUnit.MyTest.updateUserById" />
-        <item itemvalue="JUnit.MyTest.addUser" />
+        <item itemvalue="JUnit.MyTest.getStudents2" />
       </list>
     </recent_temporary>
   </component>
@@ -175,7 +187,7 @@
       <updated>1609047066396</updated>
       <workItem from="1609047069328" duration="9210000" />
       <workItem from="1609058613878" duration="4701000" />
-      <workItem from="1609124439187" duration="2077000" />
+      <workItem from="1609124439187" duration="5031000" />
     </task>
     <task id="LOCAL-00001" summary="重新创建项目进行学习">
       <created>1609047578805</created>
@@ -219,7 +231,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609059154590</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="多对一处理">
+      <created>1609128625920</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1609128625920</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -232,7 +251,8 @@
     <MESSAGE value="修改配置文件的小问题" />
     <MESSAGE value="log4j" />
     <MESSAGE value="使用注解CRUD操作" />
-    <option name="LAST_COMMIT_MESSAGE" value="使用注解CRUD操作" />
+    <MESSAGE value="多对一处理" />
+    <option name="LAST_COMMIT_MESSAGE" value="多对一处理" />
   </component>
   <component name="WindowStateProjectService">
     <state x="585" y="198" key="#Project_Structure" timestamp="1609049042152">
@@ -251,38 +271,42 @@
       <screen x="66" y="0" width="1854" height="1080" />
     </state>
     <state x="523" y="465" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/66.0.1854.1080/-1853.1.1853.1080@66.0.1854.1080" timestamp="1609048315083" />
-    <state x="504" y="130" key="CommitChangelistDialog2" timestamp="1609059153935">
+    <state x="548" y="155" key="CommitChangelistDialog2" timestamp="1609138833640">
       <screen x="66" y="0" width="1854" height="1080" />
     </state>
-    <state x="504" y="130" key="CommitChangelistDialog2/66.0.1854.1080/-1853.1.1853.1080@66.0.1854.1080" timestamp="1609059153935" />
+    <state x="548" y="155" key="CommitChangelistDialog2/66.0.1854.1080/-1853.1.1853.1080@66.0.1854.1080" timestamp="1609138833640" />
     <state x="773" y="295" key="FileChooserDialogImpl" timestamp="1609048039696">
       <screen x="66" y="0" width="1854" height="1080" />
     </state>
     <state x="773" y="295" key="FileChooserDialogImpl/66.0.1854.1080/-1853.1.1853.1080@66.0.1854.1080" timestamp="1609048039696" />
-    <state width="1811" height="261" key="GridCell.Tab.0.bottom" timestamp="1609078928541">
+    <state width="1811" height="252" key="GridCell.Tab.0.bottom" timestamp="1609138719182">
       <screen x="66" y="0" width="1854" height="1080" />
     </state>
-    <state width="1811" height="261" key="GridCell.Tab.0.bottom/66.0.1854.1080/-1853.1.1853.1080@66.0.1854.1080" timestamp="1609078928541" />
-    <state width="1811" height="261" key="GridCell.Tab.0.center" timestamp="1609078928541">
+    <state width="1811" height="252" key="GridCell.Tab.0.bottom/66.0.1854.1080/-1853.1.1853.1080@66.0.1854.1080" timestamp="1609138719182" />
+    <state width="1811" height="252" key="GridCell.Tab.0.center" timestamp="1609138719182">
       <screen x="66" y="0" width="1854" height="1080" />
     </state>
-    <state width="1811" height="261" key="GridCell.Tab.0.center/66.0.1854.1080/-1853.1.1853.1080@66.0.1854.1080" timestamp="1609078928541" />
-    <state width="1811" height="261" key="GridCell.Tab.0.left" timestamp="1609078928541">
+    <state width="1811" height="252" key="GridCell.Tab.0.center/66.0.1854.1080/-1853.1.1853.1080@66.0.1854.1080" timestamp="1609138719182" />
+    <state width="1811" height="252" key="GridCell.Tab.0.left" timestamp="1609138719181">
       <screen x="66" y="0" width="1854" height="1080" />
     </state>
-    <state width="1811" height="261" key="GridCell.Tab.0.left/66.0.1854.1080/-1853.1.1853.1080@66.0.1854.1080" timestamp="1609078928541" />
-    <state width="1811" height="261" key="GridCell.Tab.0.right" timestamp="1609078928541">
+    <state width="1811" height="252" key="GridCell.Tab.0.left/66.0.1854.1080/-1853.1.1853.1080@66.0.1854.1080" timestamp="1609138719181" />
+    <state width="1811" height="252" key="GridCell.Tab.0.right" timestamp="1609138719182">
       <screen x="66" y="0" width="1854" height="1080" />
     </state>
-    <state width="1811" height="261" key="GridCell.Tab.0.right/66.0.1854.1080/-1853.1.1853.1080@66.0.1854.1080" timestamp="1609078928541" />
-    <state x="585" y="273" key="Vcs.Push.Dialog.v2" timestamp="1609059162023">
+    <state width="1811" height="252" key="GridCell.Tab.0.right/66.0.1854.1080/-1853.1.1853.1080@66.0.1854.1080" timestamp="1609138719182" />
+    <state x="585" y="273" key="Vcs.Push.Dialog.v2" timestamp="1609136240359">
       <screen x="66" y="0" width="1854" height="1080" />
     </state>
-    <state x="585" y="273" key="Vcs.Push.Dialog.v2/66.0.1854.1080/-1853.1.1853.1080@66.0.1854.1080" timestamp="1609059162023" />
+    <state x="585" y="273" key="Vcs.Push.Dialog.v2/66.0.1854.1080/-1853.1.1853.1080@66.0.1854.1080" timestamp="1609136240359" />
     <state x="367" y="234" key="new project wizard" timestamp="1609062839545">
       <screen x="66" y="0" width="1854" height="1080" />
     </state>
     <state x="367" y="234" key="new project wizard/66.0.1854.1080/-1853.1.1853.1080@66.0.1854.1080" timestamp="1609062839545" />
+    <state x="649" y="250" key="run.anything.popup" timestamp="1609128701834">
+      <screen x="66" y="0" width="1854" height="1080" />
+    </state>
+    <state x="649" y="250" key="run.anything.popup/66.0.1854.1080/-1853.1.1853.1080@66.0.1854.1080" timestamp="1609128701834" />
     <state x="656" y="235" key="search.everywhere.popup" timestamp="1609072520148">
       <screen x="66" y="0" width="1854" height="1080" />
     </state>
