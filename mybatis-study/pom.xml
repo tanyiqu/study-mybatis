@@ -19,6 +19,7 @@
         <module>mybatis-08-多对一association</module>
         <module>mybatis-09-一对多collection</module>
         <module>mybatis-10-DynamicSQL</module>
+        <module>mybatis-11-cache</module>
     </modules>
 
     <!-- 导入坐标 -->

@@ -53,3 +53,17 @@ insert into student values(3,'张三',2);
 insert into student values(4,'张四',1);
 ```
 
+
+
+**动态SQL中使用的数据表**
+
+```sql
+create table blog(
+	id varchar(50) primary key,
+	title varchar(100) not null ,
+	author varchar(30) not null,
+	create_time datetime not null,
+	views int(30) not null
+) engine=InnoDB default charset=utf8;
+```
+
