@@ -17,6 +17,7 @@
         <module>mybatis-06-pagingByLimit</module>
         <module>mybatis-07-annotation</module>
         <module>mybatis-08-多对一association</module>
+        <module>mybatis-09-一对多collection</module>
     </modules>
 
     <!-- 导入坐标 -->

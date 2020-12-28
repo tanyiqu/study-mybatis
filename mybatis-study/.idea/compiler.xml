@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="mybatis-08-多对一association" />
         <module name="mybatis-03-crud" />
+        <module name="mybatis-09-一对多collection" />
         <module name="mybatis-05-log" />
         <module name="mybatis-06-pagingByLimit" />
         <module name="mybatis-01-起步" />

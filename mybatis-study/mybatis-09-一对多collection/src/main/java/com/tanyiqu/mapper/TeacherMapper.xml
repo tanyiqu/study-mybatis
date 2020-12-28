@@ -1,0 +1,46 @@
+<?xml version="1.0"  encoding="UTF8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--suppress SqlNoDataSourceInspection, SqlDialectInspection -->
+<mapper namespace="com.tanyiqu.mapper.TeacherMapper">
+
+    <!-- 1.按照结果嵌套查询 -->
+    <resultMap id="teacherMap" type="teacher">
+        <result property="id" column="tid"/>
+        <result property="name" column="tname"/>
+        <collection property="students" ofType="student">
+            <result property="id" column="sid"/>
+            <result property="name" column="sname"/>
+            <result property="tid" column="tid"/>
+        </collection>
+    </resultMap>
+
+    <select id="getTeacherById" resultMap="teacherMap">
+        select t.id tid, t.name tname, s.id sid, s.name sname
+        from teacher t, student s
+        where t.id = s.tid and t.id = #{tid};
+    </select>
+
+    <select id="getTeachers" resultMap="teacherMap">
+        select t.id tid, t.name tname, s.id sid, s.name sname
+        from teacher t, student s
+        where t.id = s.tid;
+    </select>
+
+    <!-- 2 -->
+    <resultMap id="teacherMap2" type="teacher">
+        <result property="id" column="id"/>
+        <result property="name" column="name"/>
+        <collection property="students" column="id" javaType="ArrayList" ofType="student" select="getStudentByTid"/>
+    </resultMap>
+
+    <select id="getTeachers2" resultMap="teacherMap2">
+        select * from teacher;
+    </select>
+
+    <select id="getStudentByTid" resultType="student">
+        select * from student where tid=#{tid};
+    </select>
+</mapper>
