@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cb8771a0-f1d9-4256-af83-6e82c1c3c47d" name="Default Changelist" comment="动态SQL">
-      <change afterPath="$PROJECT_DIR$/mybatis-11-cache/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-11-cache/src/main/resources/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="cb8771a0-f1d9-4256-af83-6e82c1c3c47d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../notes/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../notes/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../notes/缓存.md" beforeDir="false" afterPath="$PROJECT_DIR$/../notes/缓存.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,7 +154,7 @@
       <updated>1609047066396</updated>
       <workItem from="1609047069328" duration="9210000" />
       <workItem from="1609058613878" duration="4701000" />
-      <workItem from="1609124439187" duration="11694000" />
+      <workItem from="1609124439187" duration="11795000" />
     </task>
     <task id="LOCAL-00001" summary="重新创建项目进行学习">
       <created>1609047578805</created>
@@ -233,7 +226,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609150714908</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="缓存">
+      <created>1609151943053</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1609151943053</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -250,7 +250,8 @@
     <MESSAGE value="多对一处理 association" />
     <MESSAGE value="一对多处理 collection" />
     <MESSAGE value="动态SQL" />
-    <option name="LAST_COMMIT_MESSAGE" value="动态SQL" />
+    <MESSAGE value="缓存" />
+    <option name="LAST_COMMIT_MESSAGE" value="缓存" />
   </component>
   <component name="WindowStateProjectService">
     <state x="585" y="198" key="#Project_Structure" timestamp="1609149624693">
@@ -269,34 +270,34 @@
       <screen x="66" y="0" width="1854" height="1080" />
     </state>
     <state x="523" y="465" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/66.0.1854.1080/-1853.1.1853.1080@66.0.1854.1080" timestamp="1609048315083" />
-    <state x="548" y="155" key="CommitChangelistDialog2" timestamp="1609150724718">
+    <state x="548" y="155" key="CommitChangelistDialog2" timestamp="1609151942450">
       <screen x="66" y="0" width="1854" height="1080" />
     </state>
-    <state x="548" y="155" key="CommitChangelistDialog2/66.0.1854.1080/-1853.1.1853.1080@66.0.1854.1080" timestamp="1609150724718" />
+    <state x="548" y="155" key="CommitChangelistDialog2/66.0.1854.1080/-1853.1.1853.1080@66.0.1854.1080" timestamp="1609151942450" />
     <state x="773" y="295" key="FileChooserDialogImpl" timestamp="1609048039696">
       <screen x="66" y="0" width="1854" height="1080" />
     </state>
     <state x="773" y="295" key="FileChooserDialogImpl/66.0.1854.1080/-1853.1.1853.1080@66.0.1854.1080" timestamp="1609048039696" />
-    <state width="1811" height="287" key="GridCell.Tab.0.bottom" timestamp="1609151915140">
+    <state width="1811" height="232" key="GridCell.Tab.0.bottom" timestamp="1609151999387">
       <screen x="66" y="0" width="1854" height="1080" />
     </state>
-    <state width="1811" height="287" key="GridCell.Tab.0.bottom/66.0.1854.1080/-1853.1.1853.1080@66.0.1854.1080" timestamp="1609151915140" />
-    <state width="1811" height="287" key="GridCell.Tab.0.center" timestamp="1609151915140">
+    <state width="1811" height="232" key="GridCell.Tab.0.bottom/66.0.1854.1080/-1853.1.1853.1080@66.0.1854.1080" timestamp="1609151999387" />
+    <state width="1811" height="232" key="GridCell.Tab.0.center" timestamp="1609151999387">
       <screen x="66" y="0" width="1854" height="1080" />
     </state>
-    <state width="1811" height="287" key="GridCell.Tab.0.center/66.0.1854.1080/-1853.1.1853.1080@66.0.1854.1080" timestamp="1609151915140" />
-    <state width="1811" height="287" key="GridCell.Tab.0.left" timestamp="1609151915140">
+    <state width="1811" height="232" key="GridCell.Tab.0.center/66.0.1854.1080/-1853.1.1853.1080@66.0.1854.1080" timestamp="1609151999387" />
+    <state width="1811" height="232" key="GridCell.Tab.0.left" timestamp="1609151999387">
       <screen x="66" y="0" width="1854" height="1080" />
     </state>
-    <state width="1811" height="287" key="GridCell.Tab.0.left/66.0.1854.1080/-1853.1.1853.1080@66.0.1854.1080" timestamp="1609151915140" />
-    <state width="1811" height="287" key="GridCell.Tab.0.right" timestamp="1609151915140">
+    <state width="1811" height="232" key="GridCell.Tab.0.left/66.0.1854.1080/-1853.1.1853.1080@66.0.1854.1080" timestamp="1609151999387" />
+    <state width="1811" height="232" key="GridCell.Tab.0.right" timestamp="1609151999387">
       <screen x="66" y="0" width="1854" height="1080" />
     </state>
-    <state width="1811" height="287" key="GridCell.Tab.0.right/66.0.1854.1080/-1853.1.1853.1080@66.0.1854.1080" timestamp="1609151915140" />
-    <state x="585" y="273" key="Vcs.Push.Dialog.v2" timestamp="1609150729576">
+    <state width="1811" height="232" key="GridCell.Tab.0.right/66.0.1854.1080/-1853.1.1853.1080@66.0.1854.1080" timestamp="1609151999387" />
+    <state x="585" y="273" key="Vcs.Push.Dialog.v2" timestamp="1609151949567">
       <screen x="66" y="0" width="1854" height="1080" />
     </state>
-    <state x="585" y="273" key="Vcs.Push.Dialog.v2/66.0.1854.1080/-1853.1.1853.1080@66.0.1854.1080" timestamp="1609150729576" />
+    <state x="585" y="273" key="Vcs.Push.Dialog.v2/66.0.1854.1080/-1853.1.1853.1080@66.0.1854.1080" timestamp="1609151949567" />
     <state x="367" y="234" key="new project wizard" timestamp="1609151152010">
       <screen x="66" y="0" width="1854" height="1080" />
     </state>

@@ -1,11 +1,13 @@
-# mybatis-study
-Mybatis学习项目
+# MyBatis学习项目
+**官方文档：**https://mybatis.org/mybatis-3/zh/
 
 <br>
 
 **数据库环境**
 
 MySQL 8.0.18
+
+<br>
 
 **单表CRUD的数据表**
 
@@ -28,7 +30,7 @@ insert into user(id,name,pwd) values
 select * from user;
 ```
 
-
+<br>
 
 **多表查询的数据表**
 
@@ -53,7 +55,7 @@ insert into student values(3,'张三',2);
 insert into student values(4,'张四',1);
 ```
 
-
+<br>
 
 **动态SQL中使用的数据表**
 
@@ -67,3 +69,4 @@ create table blog(
 ) engine=InnoDB default charset=utf8;
 ```
 
+<br>
