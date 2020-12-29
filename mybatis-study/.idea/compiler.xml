@@ -15,8 +15,8 @@
         <module name="mybatis-11-cache" />
         <module name="mybatis-04-ResultMap" />
         <module name="mybatis-02-properties配置数据源" />
-        <module name="mybatis-10-DynamicSQL" />
         <module name="mybatis-07-annotation" />
+        <module name="mybatis-10-DynamicSQL" />
       </profile>
     </annotationProcessing>
   </component>

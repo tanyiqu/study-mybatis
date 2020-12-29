@@ -3,9 +3,10 @@
 - 数据库环境
 - 导入依赖
 - 编写mybatis配置文件
-- aop织入
-
-
+- 编写实体类
+- 编写Mapper
+- 整合Spring
+- 测试
 
 <br>
 
@@ -119,7 +120,25 @@ select * from user;
 **mybatis-config.xml**
 
 ```xml
+<?xml version="1.0" encoding="UTF8"?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
 
+<!-- 核心配置文件 -->
+<configuration>
+
+    <!-- 别名 -->
+    <typeAliases>
+        <package name="com.tanyiqu.pojo"/>
+    </typeAliases>
+
+    <!-- 映射配置文件 -->
+    <mappers>
+        <package name="com.tanyiqu.mapper"/>
+    </mappers>
+
+</configuration>
 ```
 
 <br>
@@ -129,6 +148,175 @@ select * from user;
 **applicationContext.xml**
 
 ```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+
+    <!-- DataSource -->
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="com.mysql.cj.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://127.0.0.1:3306/mybatis?useSSL=false&amp;serverTimezone=UTC"/>
+        <property name="username" value="root"/>
+        <property name="password" value="mysql"/>
+    </bean>
+
+
+    <!-- sqlSessionFactory -->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <property name="configLocation" value="classpath:mybatis-config.xml"/>
+    </bean>
+
+
+    <!-- SqlSessionTemplate -->
+    <bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
+        <constructor-arg index="0" ref="sqlSessionFactory"/>
+    </bean>
+
+    <bean id="userMapperImpl" class="com.tanyiqu.mapper.UserMapperImpl">
+        <property name="sqlSession" ref="sqlSession"/>
+    </bean>
+
+</beans>
 ```
 
+<br>
+
+## 编写实体类
+
+创建pojo包，在里面创建
+
+**User.java**
+
+```java
+public class User {
+    private int id;
+    private String name;
+    private String pwd;
+	// getter setter
+    // 有参 无参构造
+    // toString
+}
+```
+
+<br>
+
+## 编写Mapper
+
+创建mapper包，在里面分别创建
+
+**UserMapper.java**
+
+```java
+public interface UserMapper {
+    // 查询所有用户
+    List<User> getUsers();
+}
+```
+
+<br>
+
+**UserMapper.xml**
+
+```xml
+<?xml version="1.0"  encoding="UTF8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--suppress SqlNoDataSourceInspection, SqlDialectInspection -->
+<mapper namespace="com.tanyiqu.mapper.UserMapper">
+
+    <!-- 查询所有用户 -->
+    <select id="getUsers" resultType="user">
+        select * from user;
+    </select>
+
+</mapper>
+```
+
+<br>
+
+**UserMapperImpl.java**
+
+```java
+public class UserMapperImpl implements UserMapper {
+
+    private SqlSessionTemplate sqlSession;
+
+    public void setSqlSession(SqlSessionTemplate sqlSession) {
+        this.sqlSession = sqlSession;
+    }
+
+    public List<User> getUsers() {
+        return sqlSession.getMapper(UserMapper.class).getUsers();
+    }
+}
+```
+
+<br>
+
+## 整合Spring
+
+**applicationContext.xml**
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <!-- DataSource -->
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="com.mysql.cj.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://127.0.0.1:3306/mybatis?useSSL=false&amp;serverTimezone=UTC"/>
+        <property name="username" value="root"/>
+        <property name="password" value="mysql"/>
+    </bean>
+
+
+    <!-- sqlSessionFactory -->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <property name="configLocation" value="classpath:mybatis-config.xml"/>
+    </bean>
+
+
+    <!-- SqlSessionTemplate -->
+    <bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
+        <constructor-arg index="0" ref="sqlSessionFactory"/>
+    </bean>
+
+    <bean id="userMapperImpl" class="com.tanyiqu.mapper.UserMapperImpl">
+        <property name="sqlSession" ref="sqlSession"/>
+    </bean>
+
+</beans>
+```
+
+<br>
+
+## 测试
+
+**MyTest.java**
+
+```java
+public class MyTest {
+    @Test
+    public void getUsers() {
+        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        UserMapperImpl userMapperImpl = context.getBean("userMapperImpl", UserMapperImpl.class);
+        List<User> users = userMapperImpl.getUsers();
+        for (User user : users) {
+            System.out.println(user);
+        }
+    }
+}
+```
+
+<br>
