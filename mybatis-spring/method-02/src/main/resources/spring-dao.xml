@@ -20,13 +20,8 @@
     </bean>
 
 
-    <!-- SqlSessionTemplate -->
-    <bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
-        <constructor-arg index="0" ref="sqlSessionFactory"/>
-    </bean>
-
     <bean id="userMapperImpl" class="com.tanyiqu.mapper.UserMapperImpl">
-        <property name="sqlSession" ref="sqlSession"/>
+        <property name="sqlSessionFactory" ref="sqlSessionFactory"/>
     </bean>
 
 </beans>

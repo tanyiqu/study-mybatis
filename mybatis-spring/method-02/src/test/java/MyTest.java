@@ -7,10 +7,14 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import java.util.List;
 
 public class MyTest {
+
+
     @Test
     public void getUsers() {
         ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+
         UserMapperImpl userMapperImpl = context.getBean("userMapperImpl", UserMapperImpl.class);
+
         List<User> users = userMapperImpl.getUsers();
         for (User user : users) {
             System.out.println(user);

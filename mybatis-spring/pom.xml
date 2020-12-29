@@ -10,6 +10,7 @@
     <version>1.0</version>
     <modules>
         <module>method-01</module>
+        <module>method-02</module>
     </modules>
 
     <dependencies>
