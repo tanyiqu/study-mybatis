@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cb8771a0-f1d9-4256-af83-6e82c1c3c47d" name="Default Changelist" comment="" />
+    <list default="true" id="cb8771a0-f1d9-4256-af83-6e82c1c3c47d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../mybatis-spring/.idea/mybatis-spring.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-spring/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-spring/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-spring/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-spring/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -60,12 +68,12 @@
       <recent name="E:\Code\Java MyBatis\mybatis-study\mybatis-study\mybatis-02-properties配置数据源\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MyTest.testCache2">
-    <configuration name="MyTest.getTeachers2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mybatis-09-一对多collection" />
+  <component name="RunManager" selected="JUnit.MyTest.getUsers">
+    <configuration name="MyTest.getUsers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis-03-crud" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MyTest" />
-      <option name="METHOD_NAME" value="getTeachers2" />
+      <option name="METHOD_NAME" value="getUsers" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -112,19 +120,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.MyTest.getTeachers2" />
       <item itemvalue="JUnit.MyTest.queryBlogsByIf" />
       <item itemvalue="JUnit.MyTest.queryBlogsByChoose" />
       <item itemvalue="JUnit.MyTest.testCache1" />
       <item itemvalue="JUnit.MyTest.testCache2" />
+      <item itemvalue="JUnit.MyTest.getUsers" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MyTest.getUsers" />
         <item itemvalue="JUnit.MyTest.testCache2" />
         <item itemvalue="JUnit.MyTest.testCache1" />
         <item itemvalue="JUnit.MyTest.queryBlogsByChoose" />
         <item itemvalue="JUnit.MyTest.queryBlogsByIf" />
-        <item itemvalue="JUnit.MyTest.getTeachers2" />
       </list>
     </recent_temporary>
   </component>
@@ -154,6 +162,8 @@
       <workItem from="1609058613878" duration="4701000" />
       <workItem from="1609124439187" duration="11795000" />
       <workItem from="1609251887902" duration="35000" />
+      <workItem from="1610096797574" duration="26000" />
+      <workItem from="1610096941605" duration="280000" />
     </task>
     <task id="LOCAL-00001" summary="重新创建项目进行学习">
       <created>1609047578805</created>
