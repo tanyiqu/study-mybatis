@@ -1,5 +1,5 @@
 # MyBatis学习项目
-**官方文档：**https://mybatis.org/mybatis-3/zh/
+**官方文档：** https://mybatis.org/mybatis-3/zh/
 
 <br>
 
