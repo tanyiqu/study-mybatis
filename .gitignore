@@ -24,3 +24,5 @@ hs_err_pid*
 
 # ignore Maven generated target folders
 target
+
+.idea
