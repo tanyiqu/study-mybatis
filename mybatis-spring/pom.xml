@@ -9,8 +9,9 @@
     <packaging>pom</packaging>
     <version>1.0</version>
     <modules>
-        <module>method-01</module>
-        <module>method-02</module>
+        <module>mybatis-spring-01-method1</module>
+        <module>mybatis-spring-02-method2</module>
+        <module>mybatis-spring-03-声明式事务</module>
     </modules>
 
     <dependencies>

@@ -9,7 +9,6 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>method-02</artifactId>
-
+    <artifactId>mybatis-spring-01-method1</artifactId>
 
 </project>
